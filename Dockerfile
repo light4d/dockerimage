@@ -5,4 +5,5 @@ RUN sh install.sh
 ENV GOROOT /opt/go
 ENV GOPATH /GOPATH
 ENV JAVA_HOME /opt/jdk
-ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/go/bin:/opt/jdk/bin
+ENV M2_HOME /opt/maven
+ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/go/bin:/opt/jdk/bin:/opt/maven
