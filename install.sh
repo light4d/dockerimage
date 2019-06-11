@@ -8,11 +8,11 @@ tar xzvf "go${gov}.linux-amd64.tar.gz"
 mv go  /opt/go
 
 
-wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" https://download.oracle.com/otn-pub/java/jdk/${javav}+12/69cfe15208a647278a19ef0990eea691/jdk-{javav}_linux-x64_bin.tar.gz --progress=bar:force 2>&1
-tar xzvf jdk-{javav}_linux-x64_bin.tar.gz
-mv jdk-{javav}_linux-x64_bin jdk
+wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" https://download.oracle.com/otn-pub/java/jdk/${javav}+12/69cfe15208a647278a19ef0990eea691/jdk-${javav}_linux-x64_bin.tar.gz --progress=bar:force 2>&1
+tar xzvf jdk-${javav}_linux-x64_bin.tar.gz
+mv jdk-${javav}_linux-x64_bin jdk
 mv jdk /opt
-rm jdk-{javav}_linux-x64_bin.tar.gz
+rm jdk-${javav}_linux-x64_bin.tar.gz
 
 wget http://mirror.bit.edu.cn/apache/maven/maven-3/${mvnv}/binaries/apache-maven-${mvnv}-bin.tar.gz --progress=bar:force 2>&1
 tar xzvf apache-maven-${mvnv}-bin.tar.gz
