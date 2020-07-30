@@ -1,6 +1,6 @@
 #!/bin/sh
-gov="1.11"
-nodev="10.15.3"
+gov="1.14"
+nodev="14.5.0"
 cd ~
 wget "https://storage.googleapis.com/golang/go${gov}.linux-amd64.tar.gz"  --progress=bar:force 2>&1 &&\
 tar xzvf "go${gov}.linux-amd64.tar.gz" 
